@@ -1,22 +1,38 @@
+#MVIRI reading library
+
 This project contains the EUMETSAT python MVIRI reader for 
 Level 1.0 (IMAG2TG) and Level 1.5 (RECT2LP) data. 
 It can be installed as a library.
 
-#INSTALLATION
+##Getting Started
 
-export PREF="/tcenas/home/frankr"
-export P27git=${PREF}"/git"
-export CONFIGPP=${P27git}/mviri_lib/mviri/config
+Checkout the example in the Repo
 
-mkdir -p ${PREF}/lib/python2.7/site-packages/
-mkdir -p ${PREF}/lib64/python2.7/site-packages/
-mkdir -p $P27git
+##INSTALLATION
+'''
+ export PREF=<path to your home>
+  
+ export P27git=${PREF}"/git"
 
-export PYTHONPATH=${PREF}/lib64/python2.7/site-packages/
-export PYTHONPATH=${PYTHONPATH}:${PREF}/lib/python2.7/site-packages/
+ export CONFIGPP=${P27git}/mviri_lib/mviri/config
 
-cd $P27git
-  git clone git@gitlab.eumetsat.int:USC_Climate/mviri_lib.git
-  cd mviri_lib/
-    python setup.py build
-    python setup.py install --prefix=${PREF}
+ mkdir -p ${PREF}/lib/python2.7/site-packages/
+
+ mkdir -p ${PREF}/lib64/python2.7/site-packages/
+
+ mkdir -p $P27git
+
+ export PYTHONPATH=${PREF}/lib64/python2.7/site-packages/
+
+ export PYTHONPATH=${PYTHONPATH}:${PREF}/lib/python2.7/site-packages/
+
+ cd $P27git
+
+   git clone git@gitlab.eumetsat.int:USC_Climate/mviri_lib.git
+  
+   cd mviri_lib/
+  
+     python setup.py build
+    
+     python setup.py install --prefix=${PREF}
+'''
