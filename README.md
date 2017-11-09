@@ -12,7 +12,7 @@ Checkout the example in the Repo
 
 '''
 
- export PREF=<path to your home>
+ export PREF= path to your home
 
  export P27git=${PREF}"/git"
 
@@ -30,7 +30,7 @@ Checkout the example in the Repo
 
  cd $P27git
 
-   git clone git@gitlab.eumetsat.int:USC_Climate/mviri_lib.git
+   git clone https://github.com/frarue/mviri_lib.git
   
    cd mviri_lib/
   
