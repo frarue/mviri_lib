@@ -11,8 +11,9 @@ Checkout the example in the Repo
 ##INSTALLATION
 
 '''
+
  export PREF=<path to your home>
-  
+
  export P27git=${PREF}"/git"
 
  export CONFIGPP=${P27git}/mviri_lib/mviri/config
